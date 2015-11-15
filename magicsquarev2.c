@@ -1,4 +1,5 @@
-//neatened up for brin-phaggot
+//Magic Square v2
+//Function
 
 #include <stdio.h>
 
