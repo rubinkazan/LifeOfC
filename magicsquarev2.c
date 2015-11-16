@@ -5,11 +5,11 @@
 
 int nRows;
 int nCols;
+
 void magicsquare(int, int);
 
 int main()
 {
-
 
 	printf("Enter number of Rows: \n");
 	scanf("%i",&nRows);
