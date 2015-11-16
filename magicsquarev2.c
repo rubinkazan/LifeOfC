@@ -10,8 +10,6 @@ void magicsquare(int, int);
 int main()
 {
 
-	int k;
-	int p;
 
 	printf("Enter number of Rows: \n");
 	scanf("%i",&nRows);
