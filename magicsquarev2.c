@@ -3,13 +3,14 @@
 
 #include <stdio.h>
 
-int nRows;
-int nCols;
 
 void magicsquare(int, int);
 
 int main()
 {
+
+	unsigned nRows;
+	unsigned nCols;
 
 	printf("Enter number of Rows: \n");
 	scanf("%i",&nRows);
@@ -77,6 +78,15 @@ void magicsquare(int nRows, int nCols){
 
 	}
 
+	//Displaying matrix
+	for(k = 0; k < nRows; ++k){
+		for(p = 0; p < nCols; ++p){
+		printf("%i ",matrix[k][p]);
+	}
+	printf("\n");
+}
+
+
 	if(isMagic){
 		printf("\nMagic Square!\n");
 	}
@@ -84,4 +94,3 @@ void magicsquare(int nRows, int nCols){
 		printf("\nNot a Magic Square!\n");
 	}
 }
-
