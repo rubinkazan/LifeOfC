@@ -1,2 +1,2 @@
 # LifeOfC
-We know the sound of two hands clapping, but what is the sound of one hand clapping
+Repository for C content, usually tools I am working on. May contain some RE functions
