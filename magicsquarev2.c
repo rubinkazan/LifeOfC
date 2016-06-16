@@ -8,23 +8,19 @@ void magicsquare(int, int);
 
 int main()
 {
-
 	unsigned nRows;
 	unsigned nCols;
 
 	printf("Enter number of Rows: \n");
 	scanf("%i",&nRows);
 
-
 	printf("Enter number of Columns: \n");
 	scanf("%i",&nCols);
 
 	magicsquare(nRows,nCols);
-
 }
 
 void magicsquare(int nRows, int nCols){	
-
 	int k;
 	int p;
 	int sumR;
@@ -32,7 +28,6 @@ void magicsquare(int nRows, int nCols){
 	int sumD = 0;
 	int sumD2 = 0;
 	int isMagic = 1;
-	
 	int matrix[nRows][nCols];
 
 	//Enterring Coefficients of the Matrix
@@ -42,9 +37,8 @@ void magicsquare(int nRows, int nCols){
 
 			scanf("%i",&matrix[k][p]);
 		}
-
 	}
-
+	
 	//Adding diagonal elements
 	for(k = 0; k < nRows ; ++k){
 			sumD += matrix[k][k];
@@ -52,8 +46,6 @@ void magicsquare(int nRows, int nCols){
 	}
 		printf("Sum of right Diagonal = %i\n",sumD);
 		printf("Sum of left Diagonal = %i\n",sumD2);
-
-
 
 	//Adding the rows
 	for(k = 0; k < nRows; ++k){
@@ -75,7 +67,6 @@ void magicsquare(int nRows, int nCols){
 			if(sumC != sumD && sumD2)
 			 isMagic = 0;
 		sumC = 0;
-
 	}
 
 	//Displaying matrix
@@ -85,7 +76,6 @@ void magicsquare(int nRows, int nCols){
 	}
 	printf("\n");
 }
-
 
 	if(isMagic){
 		printf("\nMagic Square!\n");
