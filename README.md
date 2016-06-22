@@ -1,2 +1,2 @@
-# revised2
-misc C
+# MajicSquare
+Probably my first repo.
